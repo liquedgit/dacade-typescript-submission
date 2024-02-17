@@ -1,0 +1,27 @@
+service : {
+  authenticate : (text) -> (
+      record { money : int32; listTransactionsid : vec text; name : text },
+    );
+  createTransaction : (text, text, int32, text) -> (
+      variant { Ok : text; Err : text },
+    );
+  getUserTransactions : (text) -> (
+      vec record {
+        id : text;
+        foreign_user_id : text;
+        user : text;
+        description : text;
+        amount : int32;
+      },
+    ) query;
+  topupMoney : (text, int32) -> (
+      variant {
+        Ok : record {
+          money : int32;
+          listTransactionsid : vec text;
+          name : text;
+        };
+        Err : text;
+      },
+    );
+}

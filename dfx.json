@@ -1,0 +1,13 @@
+{
+    "canisters": {
+        "finance_reminder": {
+            "type": "custom",
+            "main": "src/index.ts",
+            "candid": "src/index.did",
+            "build": "npx azle finance_reminder",
+            "wasm": ".azle/finance_reminder/finance_reminder.wasm",
+            "gzip": true
+
+        }
+    }
+}

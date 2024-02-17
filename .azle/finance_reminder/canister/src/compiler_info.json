@@ -1,0 +1,1 @@
+{"canister_methods":{"queries":[{"name":"getUserTransactions","composite":false}],"updates":[{"name":"authenticate"},{"name":"createTransaction"},{"name":"topupMoney"}],"callbacks":{}},"env_vars":[]}
