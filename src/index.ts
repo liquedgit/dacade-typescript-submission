@@ -76,6 +76,7 @@ export default Canister({
                 const tr = FinanceTree.get(idTr).Some
                 if(tr){
                     listTransaction.push(tr)
+                    
                 }
             }
         }
